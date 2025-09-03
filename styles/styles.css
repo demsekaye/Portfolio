@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  display: flex;                 /* use flexbox */
+  justify-content: center;       /* center horizontally */
+  align-items: center;           /* center vertically */
+  height: 100vh;                 /* full screen height */
+  margin: 0;                     /* remove default body margin */
+}
+
+.folder-container {
+  display: flex;                 /* line them up horizontally */
+  gap: 40px;                     /* space between folders */
+}
+
+.folder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.folder img {
+  width: 60px;   /* reduced size */
+  height: 60px;  /* reduced size */
+}
+
+.folder-label {
+  margin-top: 8px;
+  font-size: 14px;
+}
