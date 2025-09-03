@@ -1,31 +1,30 @@
-body {
-  font-family: sans-serif;
-  display: flex;                 /* use flexbox */
-  justify-content: center;       /* center horizontally */
-  align-items: center;           /* center vertically */
-  height: 100vh;                 /* full screen height */
-  margin: 0;                     /* remove default body margin */
+/* Parent container holding all folders in one row */
+.folders {
+  display: flex;
+  justify-content: center;  /* centers the row horizontally */
+  gap: 40px;                /* space between items */
 }
 
-.folder-container {
-  display: flex;                 /* line them up horizontally */
-  gap: 40px;                     /* space between folders */
-}
-
-.folder {
+/* Each icon+label group (same size for all) */
+.folder-card {
+  width: 140px;             /* make all cards the same width */
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;
-  color: black;
+  text-decoration: none;    /* remove underline on links */
+  color: inherit;           /* keep page text color */
 }
 
-.folder img {
-  width: 60px;   /* reduced size */
-  height: 60px;  /* reduced size */
+/* Folder icon */
+.folder-card img {
+  width: 60px;
+  height: 60px;
+  display: block;
 }
 
-.folder-label {
+/* Label under the icon */
+.folder-card .label {
   margin-top: 8px;
   font-size: 14px;
+  text-align: center;
 }
